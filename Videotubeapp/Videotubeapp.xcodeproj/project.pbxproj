@@ -12,9 +12,13 @@
 		A71F7BAA1F8AEC73001B26DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71F7BA81F8AEC73001B26DC /* Main.storyboard */; };
 		A71F7BAC1F8AEC73001B26DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71F7BAB1F8AEC73001B26DC /* Assets.xcassets */; };
 		A71F7BAF1F8AEC73001B26DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71F7BAD1F8AEC73001B26DC /* LaunchScreen.storyboard */; };
+		A71F7BB71F8AEDEC001B26DC /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A71F7BB61F8AEDEC001B26DC /* podfile */; };
+		AF6D7D623ABC73DB93CCD40E /* libPods-Videotubeapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54096E382F886FCF417A486 /* libPods-Videotubeapp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		704D353CD3D3F40EDAA91C41 /* Pods-Videotubeapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Videotubeapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Videotubeapp/Pods-Videotubeapp.release.xcconfig"; sourceTree = "<group>"; };
+		A54096E382F886FCF417A486 /* libPods-Videotubeapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Videotubeapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71F7BA11F8AEC73001B26DC /* Videotubeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Videotubeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71F7BA41F8AEC73001B26DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A71F7BA61F8AEC73001B26DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A71F7BAB1F8AEC73001B26DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A71F7BAE1F8AEC73001B26DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A71F7BB01F8AEC73001B26DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71F7BB61F8AEDEC001B26DC /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		FFCAC394EED954ECE91FD299 /* Pods-Videotubeapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Videotubeapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Videotubeapp/Pods-Videotubeapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6D7D623ABC73DB93CCD40E /* libPods-Videotubeapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230AA671BE4458FA2226802F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A54096E382F886FCF417A486 /* libPods-Videotubeapp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A71F7B981F8AEC73001B26DC = {
 			isa = PBXGroup;
 			children = (
+				A71F7BB61F8AEDEC001B26DC /* podfile */,
 				A71F7BA31F8AEC73001B26DC /* Videotubeapp */,
 				A71F7BA21F8AEC73001B26DC /* Products */,
+				E33D44B36DB90DA5AC07C2CE /* Pods */,
+				230AA671BE4458FA2226802F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +82,15 @@
 			path = Videotubeapp;
 			sourceTree = "<group>";
 		};
+		E33D44B36DB90DA5AC07C2CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFCAC394EED954ECE91FD299 /* Pods-Videotubeapp.debug.xcconfig */,
+				704D353CD3D3F40EDAA91C41 /* Pods-Videotubeapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71F7BB31F8AEC73001B26DC /* Build configuration list for PBXNativeTarget "Videotubeapp" */;
 			buildPhases = (
+				5CB4169D754ABEF95532B1B6 /* [CP] Check Pods Manifest.lock */,
 				A71F7B9D1F8AEC73001B26DC /* Sources */,
 				A71F7B9E1F8AEC73001B26DC /* Frameworks */,
 				A71F7B9F1F8AEC73001B26DC /* Resources */,
+				ADE5362863CD7A0DC42A1B21 /* [CP] Embed Pods Frameworks */,
+				82DD30FFD272AA01B8DD6E77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,67 @@
 			files = (
 				A71F7BAF1F8AEC73001B26DC /* LaunchScreen.storyboard in Resources */,
 				A71F7BAC1F8AEC73001B26DC /* Assets.xcassets in Resources */,
+				A71F7BB71F8AEDEC001B26DC /* podfile in Resources */,
 				A71F7BAA1F8AEC73001B26DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CB4169D754ABEF95532B1B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Videotubeapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82DD30FFD272AA01B8DD6E77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Videotubeapp/Pods-Videotubeapp-resources.sh",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Videotubeapp/Pods-Videotubeapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE5362863CD7A0DC42A1B21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Videotubeapp/Pods-Videotubeapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A71F7B9D1F8AEC73001B26DC /* Sources */ = {
@@ -261,6 +347,7 @@
 		};
 		A71F7BB41F8AEC73001B26DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCAC394EED954ECE91FD299 /* Pods-Videotubeapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3S7SA97273;
@@ -274,6 +361,7 @@
 		};
 		A71F7BB51F8AEC73001B26DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704D353CD3D3F40EDAA91C41 /* Pods-Videotubeapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3S7SA97273;
@@ -304,6 +392,7 @@
 				A71F7BB51F8AEC73001B26DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

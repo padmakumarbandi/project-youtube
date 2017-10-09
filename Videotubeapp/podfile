@@ -1,0 +1,7 @@
+
+platform :ios, '8.1'
+target "Videotubeapp" do
+pod 'Firebase'
+pod 'Google/SignIn'
+end
+
